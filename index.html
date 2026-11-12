@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katherine Johnson | Consciência Negra na Tecnologia e na NASA</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="starfield"></canvas>
+
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#inicio" class="logo">
+        <span class="logo-badge">NASA • 1918–2020</span>
+        <strong>Katherine Johnson</strong>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#historia">Trajetória</a>
+        <a href="#missoes">Missões NASA</a>
+        <a href="#simulador">Simulador Orbital</a>
+        <a href="#legado">Consciência Negra</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#mural">Mural</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <div class="pill">✊🏾 Consciência Negra na Ciência & Tecnologia</div>
+          <h1>A mente brilhante que calculou o caminho das estrelas.</h1>
+          <p>
+            Matemática afro-americana pioneira na <strong>NASA</strong>, Katherine Johnson quebrou barreiras raciais e de gênero na computação espacial, garantindo a segurança dos primeiros voos tripulados e da chegada à Lua.
+          </p>
+          <div class="hero-actions">
+            <a href="#simulador" class="btn btn-primary">Testar Simulador Orbital</a>
+            <a href="#historia" class="btn btn-secondary">Explorar Trajetória</a>
+          </div>
+          <div class="stats-row">
+            <div class="stat-card">
+              <span class="stat-number" data-target="33">0</span>
+              <span class="stat-label">Anos na NASA</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="26">0</span>
+              <span class="stat-label">Artigos Científicos</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="1969">0</span>
+              <span class="stat-label">Pouso da Apollo 11</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="orbit-card">
+            <div class="planet"></div>
+            <div class="orbit orbit-1"><span class="satellite"></span></div>
+            <div class="orbit orbit-2"><span class="satellite sat-2"></span></div>
+            <div class="quote-box">
+              <p>“Conte tudo. Conte os passos até a rua, os passos até a igreja, o número de pratos que você lavou... tudo o que pudesse ser contado, eu contei.”</p>
+              <span>— Katherine Johnson</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAJETÓRIA -->
+    <section id="historia" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Linha do Tempo</span>
+          <h2>De "Computador Humano" a Lenda Espacial</h2>
+          <p>Uma jornada marcada por excelência matemática, coragem frente à segregação e pioneirismo tecnológico.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-year">1918</div>
+            <div class="timeline-card">
+              <h3>Infância Prodígio na Virgínia Ocidental</h3>
+              <p>Nascida em White Sulphur Springs (EUA), demonstrou genialidade matemática cedo, ingressando no ensino médio aos 10 anos e graduando-se com honras em Matemática e Francês aos 18.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-year">1953</div>
+            <div class="timeline-card">
+              <h3>Ingresso na NACA (Futura NASA)</h3>
+              <p>Passou a integrar a divisão segregada de "Computadores Humanos" em Langley, realizando cálculos complexos de aeronáutica à mão com precisão extraordinária.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-year">1961–1962</div>
+            <div class="timeline-card">
+              <h3>Projeto Mercury e a Confiança de John Glenn</h3>
+              <p>Calculou a trajetória do primeiro americano no espaço (Alan Shepard) e conferiu manualmente os números dos computadores eletrônicos IBM antes do voo orbital de John Glenn.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-year">1969</div>
+            <div class="timeline-card">
+              <h3>Cálculos da Missão Apollo 11</h3>
+              <p>Determinou as janelas de lançamento e as trajetórias de acoplamento do módulo lunar que levou Neil Armstrong e Buzz Aldrin à superfície da Lua.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-year">2015</div>
+            <div class="timeline-card">
+              <h3>Medalha Presidencial da Liberdade</h3>
+              <p>Recebeu das mãos de Barack Obama a mais alta honraria civil dos Estados Unidos pelo impacto histórico de seu trabalho na ciência e na igualdade racial.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSÕES -->
+    <section id="missoes" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Tecnologia & Precisão</span>
+          <h2>Missões Transformadas por Seus Cálculos</h2>
+          <p>Filtre por programa espacial para conhecer o impacto direto de Katherine Johnson na engenharia aeroespacial.</p>
+        </div>
+
+        <div class="filter-bar reveal">
+          <button class="filter-btn active" data-filter="todos">Todos os Programas</button>
+          <button class="filter-btn" data-filter="mercury">Projeto Mercury</button>
+          <button class="filter-btn" data-filter="apollo">Programa Apollo</button>
+          <button class="filter-btn" data-filter="shuttle">Ônibus Espacial</button>
+        </div>
+
+        <div class="cards-grid" id="missionsGrid">
+          <article class="mission-card reveal" data-category="mercury">
+            <span class="badge badge-gold">Projeto Mercury • 1961</span>
+            <h3>Freedom 7 (Alan Shepard)</h3>
+            <p>Calculou a janela de lançamento exata e a trajetória parabólica do primeiro voo espacial tripulado dos Estados Unidos, garantindo o pouso seguro no oceano.</p>
+          </article>
+
+          <article class="mission-card reveal" data-category="mercury">
+            <span class="badge badge-gold">Projeto Mercury • 1962</span>
+            <h3>Friendship 7 (John Glenn)</h3>
+            <p>O astronauta John Glenn recusou-se a voar até que Katherine verificasse pessoalmente os cálculos feitos pelos novos computadores digitais IBM 7090.</p>
+          </article>
+
+          <article class="mission-card reveal" data-category="apollo">
+            <span class="badge badge-magenta">Programa Apollo • 1969</span>
+            <h3>Apollo 11 — Pouso na Lua</h3>
+            <p>Sincronizou a trajetória entre o módulo lunar Eagle e o módulo de comando Columbia para que os astronautas pudessem retornar da órbita lunar com segurança.</p>
+          </article>
+
+          <article class="mission-card reveal" data-category="apollo">
+            <span class="badge badge-magenta">Programa Apollo • 1970</span>
+            <h3>Resgate da Apollo 13</h3>
+            <p>Após a explosão de um tanque de oxigênio no espaço, seus procedimentos de navegação por estrelas ajudaram a tripulação a calcular a rota de volta à Terra.</p>
+          </article>
+
+          <article class="mission-card reveal" data-category="shuttle">
+            <span class="badge badge-cyan">Ônibus Espacial • 1980s</span>
+            <h3>Programa Space Shuttle</h3>
+            <p>Contribuiu para os modelos matemáticos de voo orbital e reentrada atmosférica dos ônibus espaciais até sua aposentadoria em 1986.</p>
+          </article>
+
+          <article class="mission-card reveal" data-category="shuttle">
+            <span class="badge badge-cyan">Exploração Profunda</span>
+            <h3>Planos para Marte</h3>
+            <p>Participou dos estudos iniciais da NASA sobre trajetórias interplanetárias e sistemas de navegação autônoma para futuras missões a Marte.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIMULADOR ORBITAL -->
+    <section id="simulador" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Laboratório Interativo</span>
+          <h2>Simulador de Janela de Lançamento Orbital</h2>
+          <p>Ajuste o ângulo de lançamento e a velocidade da nave para encontrar a órbita perfeita — assim como Katherine fazia na NASA.</p>
+        </div>
+
+        <div class="sim-box reveal">
+          <div class="sim-controls">
+            <div class="control-group">
+              <label for="angleInput">Ângulo de Inserção Orbital: <strong id="angleValue">42°</strong></label>
+              <input type="range" id="angleInput" min="15" max="80" value="42" />
+            </div>
+
+            <div class="control-group">
+              <label for="velocityInput">Velocidade de Escape (km/s): <strong id="velocityValue">7.8 km/s</strong></label>
+              <input type="range" id="velocityInput" min="5.0" max="11.5" step="0.1" value="7.8" />
+            </div>
+
+            <div class="sim-status" id="simStatus">
+              <strong>Status da Trajetória:</strong> Órbita Estável! Janela aprovada para missão lunar.
+            </div>
+            <button type="button" class="btn btn-primary" id="optimalBtn">Aplicar Cálculo de Katherine</button>
+          </div>
+
+          <div class="sim-display">
+            <canvas id="orbitCanvas" width="380" height="320"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSCIÊNCIA NEGRA -->
+    <section id="legado" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Consciência Negra & Representatividade</span>
+          <h2>Estrelas Além do Tempo na Computação</h2>
+          <p>Katherine Johnson não caminhou sozinha: ao lado de outras cientistas negras, ela redefiniu a história da tecnologia.</p>
+        </div>
+
+        <div class="pioneers-grid">
+          <div class="pioneer-card reveal">
+            <h3>Katherine Johnson</h3>
+            <span class="role">Matemática & Física Espacial</span>
+            <p>Primeira mulher de sua divisão a assinar relatórios técnicos da NASA, provando que talento e rigor científico superam qualquer barreira de preconceito.</p>
+          </div>
+
+          <div class="pioneer-card reveal">
+            <h3>Dorothy Vaughan</h3>
+            <span class="role">Programadora & Supervisora</span>
+            <p>Primeira supervisora negra da NACA; aprendeu sozinha a linguagem FORTRAN e ensinou sua equipe a programar os primeiros computadores IBM da agência.</p>
+          </div>
+
+          <div class="pioneer-card reveal">
+            <h3>Mary Jackson</h3>
+            <span class="role">Engenheira Aeroespacial</span>
+            <p>Lutou na Justiça pelo direito de estudar em uma escola segregada para concluir sua formação e tornou-se a primeira engenheira negra da NASA.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section id="quiz" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Desafio de Conhecimento</span>
+          <h2>Quiz: Consciência Negra e Katherine Johnson</h2>
+          <p>Teste o que você aprendeu sobre a cientista e sua contribuição para a tecnologia espacial.</p>
+        </div>
+
+        <div class="quiz-card reveal" id="quizContainer">
+          <div class="quiz-top">
+            <span id="quizProgress">Pergunta 1 de 4</span>
+            <span id="quizScore">Acertos: 0</span>
+          </div>
+          <h3 id="quizQuestion">Carregando pergunta...</h3>
+          <div class="quiz-options" id="quizOptions"></div>
+          <div class="quiz-feedback" id="quizFeedback"></div>
+          <button class="btn btn-primary hidden" id="nextQuestionBtn">Próxima Pergunta</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MURAL -->
+    <section id="mural" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Vozes do Futuro</span>
+          <h2>Mural da Consciência Negra na Tecnologia</h2>
+          <p>Deixe sua mensagem de inspiração sobre representatividade negra na ciência, programação e engenharia.</p>
+        </div>
+
+        <div class="mural-grid">
+          <form class="mural-form reveal" id="tributeForm">
+            <h3>Registrar Homenagem</h3>
+            <input type="text" id="authorName" placeholder="Seu nome ou turma" required />
+            <textarea id="authorMessage" rows="4" placeholder="Escreva uma frase sobre Katherine Johnson ou Consciência Negra..." required></textarea>
+            <button type="submit" class="btn btn-primary">Publicar no Mural</button>
+          </form>
+
+          <div class="mural-list reveal" id="tributeList"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p><strong>Projeto Consciência Negra na Tecnologia</strong> — Homenagem a Katherine Johnson (1918–2020)</p>
+      <p class="footer-sub">Desenvolvido em HTML5, CSS3 e JavaScript puro para estudo e divulgação científica.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
